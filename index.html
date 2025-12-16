@@ -1,0 +1,44 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi aplicacion de selfies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <a href="" id="link"download="miselfie.png"></a>
+            <h1>Aplicacion de voz para tomar foto
+                <img src="enderpearl.png" id="logo_img">
+            </h1>
+            <hr>
+            <h4 style="color: aquamarine;">Haz click en permitir cuando aparezca la ventana emergente,despues de dar una orden de voz</h4>
+
+            <div class="form-group">
+                <h3>DI "toma mi selfie"</h3>
+                <label>Tu salida de voz:</label>
+                <textarea class="form-control" id="textbox"readonly="true"></textarea>
+            </div>
+
+            <button class="btn btn-primary" onclick="start()">Iniciar</button>
+            <p>Haz click en el boton iniciar</p>
+
+            <label>Tu cámara: </label>
+            <div id="camera"></div>
+            <br>
+
+            <label>Tu selfie aparecera aqui: </label>
+            <div id="result"></div>
+        </center>
+    </div>
+    <script src="main.js"></script>
+  
+</body>
+</html>
